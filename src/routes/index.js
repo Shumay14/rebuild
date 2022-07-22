@@ -2,6 +2,9 @@
 const express = require("express");
 const router = express.Router();
 const multer = require("multer");
+const axios = require("axios");
+const fs = require("fs");
+
 const upload = multer({
   storage: "uploads/",
 });
