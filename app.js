@@ -17,8 +17,10 @@ app.set("view engine", "ejs"); // view html template handler 엔진 설정
 const home = require("./src/routes"); // set homepage routes
 app.use("/", home); // use -> 미들웨어 등록 메서드
 
-const publicDirectory = path.join(__dirname, "./src/public"); // public static data folder
+const publicDirectory = path.join(__dirname, "./src/public"); // 경로 추가 public static data folder
 app.use(express.static(publicDirectory));
+
+app.use(express.static(`${__dirname}/src/public`));
 
 // Parse URL-encoded bodies (as sent by HTML forms)
 app.use(express.urlencoded({ extended: false }));
