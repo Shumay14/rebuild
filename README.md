@@ -13,7 +13,7 @@ npm i nodemon -s
 
 npm start setting
 
-## sequelize
+## sequelize -> if you want
 
 npm i morgan nunjucks -s
 npm i sequelize sequelize-cli mysql2 -s
@@ -42,7 +42,9 @@ Controller -> 페이지 연결 전달
 
 <middleware>
 app.use(middleware) // 모든 요청에 미들웨어 실행
+
 app.use("/abc", middleware) // abc로 시작하는 요청에서 미들웨어 실행
+
 app.post("/abc, middleware) // abc로 시작하는 POST 요청에서 미들웨어 실행
 
 app.use("/", (req, res, next)) => {
@@ -67,3 +69,6 @@ JWT secret 비밀키를 사용해서 시그니처 검사하여 변조 확인
 5. 서버에서 JWT에 포함된 Signature 확인후 user 정보를 request에 담아서 보냄
 6. 서버에서 브라우저의 요청 처리
 7. 브라우저로 response를 보낸다.
+
+<MetaMask api>
+npm install web3
