@@ -2,6 +2,12 @@
 // to allow unique tokens to be managed, owned, and traded.
 // It does not madate a standard for token metadata 
 // or restrict adding supplemental functions.
+// http://erc721.org/
+
+// What is ERC721
+// ERC721 is a free, open standard that describes how to build non-fungible or unique tokens on the Ethereum blockchain.
+// While most tokens are fungible (every token is the same as every other token), ERC721 tokens are all unique.
+// Think of them like rare, one-of-a-=kind collectables.
 
 pragma solidity ^0.4.20;
 
